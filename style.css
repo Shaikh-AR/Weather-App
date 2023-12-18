@@ -8,6 +8,12 @@
 body{
     /* background-color: #222; */
     background: linear-gradient(to right, #3498db, #e74c3c);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .card{
     /* border: 1px solid white; */
@@ -103,7 +109,14 @@ body{
 @media (width <= 480px){
     .search{
         flex-direction: column;
+        justify-content: center;
         gap: 10px
+    }
+    .search input{
+        padding: 10px auto;
+        border-radius: 20px;
+        flex: 1;
+        margin-right: 0px;
     }
     .search button {
         width: 60px;
@@ -126,5 +139,19 @@ body{
     .col p{
         font-size: 20px;
         margin: 5px;
+    }
+}
+@media (width <= 320px){
+
+    .search input{
+        padding: 5px 10px;
+        height: 50px;
+        width: 150px;
+        border-radius: 25px;
+    }
+    .search button {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
     }
 }
